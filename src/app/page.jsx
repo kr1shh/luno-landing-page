@@ -6,22 +6,6 @@ import Section from "@/components/ui/Section";
 import { BellRing, CheckCheck, SunMoon, UsersRound } from "lucide-react";
 import Image from "next/image";
 
-
-export const metadata = {
-  title: "Luno - The Everyday Planner",
-  description: "Luno helps you manage daily tasks, track personal goals, and organize priorities with a simple interface for individuals and small teams.",
-  keywords: "task planner, daily planner, team organization, productivity app, Luno",
-  openGraph: {
-    title: "Luno - The Everyday Planner",
-    description: "Manage tasks, track goals, and organize priorities with our simple, calming interface.",
-    type: "website",
-    images: ["/public/images/black-logo.png"],
-  },
-  alternates: {
-    canonical: "https://luno.ai",
-  }
-}
-
 const Home = () => {
   return (
     <>
