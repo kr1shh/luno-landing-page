@@ -64,9 +64,9 @@ const NavBar = () => {
             }
           </div>
           <div>
-            <Button className="md:hidden bg-transparent text-dark hover:bg-transparent hover:text-dark" onClick={toggleDrawer}>
+            <button className="md:hidden bg-transparent text-dark hover:bg-transparent hover:text-dark" onClick={toggleDrawer}>
               <Menu className="w-8 h-8"/>
-            </Button>
+            </button>
             <Button className={"hidden md:block"}>Sign Up</Button>
           </div>
         </div>

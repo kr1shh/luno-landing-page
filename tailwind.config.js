@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'radial-red-fade': 'radial-gradient(circle, rgba(255, 61, 61, 1) 0%, rgba(237, 221, 83, 0) 60%)',
+      },
       fontFamily: {
         main : "SF UI Display",
       },
