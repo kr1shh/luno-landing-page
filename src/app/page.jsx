@@ -24,13 +24,13 @@ const Home = () => {
         </p>
         <div className="flex gap-2">
           <Button className={"border border-primary"}>Get Started</Button>
-          <Button
+          <button
             className={
-              "border border-primary bg-transparent text-primary hover:text-blue-500 hover:bg-transparent"
+              "border border-primary bg-transparent text-primary hover:text-blue-500 hover:bg-transparent rounded-full py-3 px-4"
             }
           >
             For Teams
-          </Button>
+          </button>
         </div>
       </Main>
       <Section className={"mt-12"}>
