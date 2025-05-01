@@ -38,7 +38,7 @@ const NavBar = () => {
   
   return (
     <>
-      <nav className="w-full">
+      <nav className="w-full fixed top-0 z-50 bg-white shadow-sm">
         <div className="w-full lg:max-w-7xl mx-auto flex justify-between items-center p-4">
           <Link href={"/"}>
             <div className="relative w-[120px] h-[50px]">
@@ -56,7 +56,7 @@ const NavBar = () => {
                 <Link 
                   key={index} 
                   href="/" 
-                  className="hover:bg-primary/20 py-2 px-3 rounded-xl hover:text-primary transition-all duration-300 ease-in-out"
+                  className="hover:bg-primary/20 py-3 px-4 rounded-full hover:text-primary transition-all duration-300 ease-in-out"
                 >
                   {item}
                 </Link>
@@ -64,7 +64,7 @@ const NavBar = () => {
             }
           </div>
           <div>
-            <Button className="md:hidden bg-transparent text-dark" onClick={toggleDrawer}>
+            <Button className="md:hidden bg-transparent text-dark hover:bg-transparent hover:text-dark" onClick={toggleDrawer}>
               <Menu className="w-8 h-8"/>
             </Button>
             <Button className={"hidden md:block"}>Sign Up</Button>
@@ -89,9 +89,9 @@ const NavBar = () => {
             <div className="relative w-[100px] h-[40px]">
               <Image src="/images/black-logo.png" alt="Luno logo" fill className="object-contain w-full h-full" />
             </div>
-            <Button onClick={toggleDrawer} className="w-10 h-10 flex items-center justify-center">
-              <X className="w-5 h-5" />
-            </Button>
+            <button onClick={toggleDrawer} className="w-10 h-10 p-0 bg-primary rounded-full flex items-center text-white justify-center">
+              <X className="w-5 h-5 text-white" />
+            </button>
           </div>
           
           <div className="flex flex-col space-y-4 font-main">
