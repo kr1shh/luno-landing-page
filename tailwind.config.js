@@ -7,9 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        main : "SF UI Display",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3b78ee",
+        dark: "#030919",
+        background: "#f4f6fa"
       },
     },
   },
